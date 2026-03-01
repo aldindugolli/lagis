@@ -1,0 +1,48 @@
+# LAGIS - Docker Compose
+# For local development and deployment
+
+version: '3.8'
+
+services:
+  lagis:
+    build: .
+    container_name: lagis
+    restart: unless-stopped
+    environment:
+      # Telegram Configuration
+      - TG_TOKEN=${TG_TOKEN}
+      - TG_CHAT=${TG_CHAT}
+      # Scheduler (optional)
+      - SCHEDULER_HOUR=6
+      - SCHEDULER_MINUTE=0
+      # Ollama URL (use host network for local)
+      - OLLAMA_URL=http://host.docker.internal:11434
+    volumes:
+      # Persistent data - all persists across restarts
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./output:/app/output
+      - ./config:/app/config
+    ports:
+      - "11434:11434"  # Ollama
+    networks:
+      - lagis-network
+
+  # Optional: Ollama service (if not running on host)
+  ollama:
+    image: ollama/ollama:latest
+    container_name: lagis-ollama
+    restart: unless-stopped
+    volumes:
+      - ollama-data:/root/.ollama
+    ports:
+      - "11434:11434"
+    networks:
+      - lagis-network
+
+networks:
+  lagis-network:
+    driver: bridge
+
+volumes:
+  ollama-data:

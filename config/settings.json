@@ -1,0 +1,56 @@
+{
+  "models": {
+    "reasoning": {
+      "name": "llama3.1:8b",
+      "temperature": 0.3,
+      "max_tokens": 2048
+    },
+    "summarization": {
+      "name": "llama3.1:8b",
+      "temperature": 0.2,
+      "max_tokens": 1024
+    },
+    "embedding": {
+      "name": "nomic-embed-text"
+    }
+  },
+  "ollama": {
+    "base_url": "http://localhost:11434",
+    "timeout": 120
+  },
+  "rss_feeds": [
+    {"name": "Reuters World", "url": "https://www.reutersagency.com/feed/?best-regions=world&post_type=best"},
+    {"name": "BBC World", "url": "http://feeds.bbci.co.uk/news/world/rss.xml"},
+    {"name": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml"},
+    {"name": "AP News", "url": "https://feeds.apnews.com/apnews/topnews"},
+    {"name": "CNN World", "url": "http://rss.cnn.com/rss/edition.rss"},
+    {"name": "Guardian World", "url": "https://www.theguardian.com/world/rss"},
+    {"name": "NYT World", "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"},
+    {"name": "Washington Post", "url": "https://feeds.washingtonpost.com/rss/world"},
+    {"name": "Fox News World", "url": "https://feeds.foxnews.com/api/fox-news/latest/politics/feed"},
+    {"name": "ABC News", "url": "https://abcnews.go.com/abcnews/topstories"},
+    {"name": "CBS News", "url": "https://www.cbsnews.com/rss/main.rss"},
+    {"name": "NBC News", "url": "https://feeds.nbcnews.com/rss/world"},
+    {"name": "Sky News", "url": "https://www.sky.com/rss/world/rss.xml"},
+    {"name": "DW World", "url": "https://rss.dw.com/rdf/rss-en-all"},
+    {"name": "France24", "url": "https://www.france24.com/en/rss"},
+    {"name": "Euronews", "url": "https://www.euronews.com/rss"},
+    {"name": "BBC Business", "url": "http://feeds.bbci.co.uk/news/business/rss.xml"},
+    {"name": "Reuters Business", "url": "https://www.reutersagency.com/feed/?best-topics=business-finance"},
+    {"name": "Bloomberg", "url": "https://feeds.bloomberg.com/markets/news.rss"},
+    {"name": "Financial Times", "url": "https://www.ft.com/rss/home"},
+    {"name": "CNBC", "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"},
+    {"name": "MarketWatch", "url": "https://feeds.marketwatch.com/marketwatch/topstories/"},
+    {"name": "Economist", "url": "https://www.economist.com/rss"},
+    {"name": "Foreign Affairs", "url": "https://www.foreignaffairs.com/rss.xml"},
+    {"name": "CSIS", "url": "https://www.csis.org/feed/rss.xml"},
+    {"name": "Brookings", "url": "https://www.brookings.edu/feed/"},
+    {"name": "RAND", "url": "https://www.rand.org/news/rss.html"},
+    {"name": "Defense News", "url": "https://www.defensenews.com/feed/rss/"},
+    {"name": "Jane's Defence", "url": "https://www.janes.com/rss/latest"},
+    {"name": "Stratfor", "url": "https://maestrnoor2zu7tceso2t5tfzv3g6xwgene63f3f6gvf3x3hk6xqbshqyid.onion/feed"}
+  ],
+  "database": {"path": "data/lagis.db"},
+  "output": {"briefs_dir": "output/briefs", "data_dir": "data"},
+  "scheduler": {"time": "06:00", "enabled": true}
+}

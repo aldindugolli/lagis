@@ -1,0 +1,206 @@
+2026-02-27 17:03:55,216 - INFO - ==================================================
+2026-02-27 17:03:55,216 - INFO - Starting LAGIS Intelligence Pipeline
+2026-02-27 17:03:55,216 - INFO - Timestamp: 2026-02-27T17:03:55.216082
+2026-02-27 17:03:55,216 - INFO - ==================================================
+2026-02-27 17:03:55,216 - INFO - >>> Running: collect
+2026-02-27 17:03:55,217 - INFO - Collector initialized with 30 feeds
+2026-02-27 17:03:55,217 - INFO - Fetching: Reuters World
+2026-02-27 17:03:55,794 - INFO - Fetching: BBC World
+2026-02-27 17:03:58,294 - INFO - Fetching: Al Jazeera
+2026-02-27 17:03:58,940 - INFO - Fetching: AP News
+2026-02-27 17:03:58,997 - INFO - Fetching: CNN World
+2026-02-27 17:03:59,687 - INFO - Fetching: Guardian World
+2026-02-27 17:04:00,399 - INFO - Fetching: NYT World
+2026-02-27 17:04:01,023 - INFO - Fetching: Washington Post
+2026-02-27 17:04:12,467 - INFO - Fetching: Fox News World
+2026-02-27 17:04:12,708 - INFO - Fetching: ABC News
+2026-02-27 17:04:21,137 - INFO - Fetching: CBS News
+2026-02-27 17:04:22,122 - INFO - Fetching: NBC News
+2026-02-27 17:04:23,392 - INFO - Fetching: Sky News
+2026-02-27 17:04:24,229 - INFO - Fetching: DW World
+2026-02-27 17:04:25,270 - INFO - Fetching: France24
+2026-02-27 17:04:25,917 - INFO - Fetching: Euronews
+2026-02-27 17:04:26,521 - INFO - Fetching: BBC Business
+2026-02-27 17:04:29,857 - INFO - Fetching: Reuters Business
+2026-02-27 17:04:30,540 - INFO - Fetching: Bloomberg
+2026-02-27 17:04:32,270 - INFO - Fetching: Financial Times
+2026-02-27 17:04:33,472 - INFO - Fetching: CNBC
+2026-02-27 17:04:34,548 - INFO - Fetching: MarketWatch
+2026-02-27 17:04:35,729 - INFO - Fetching: Economist
+2026-02-27 17:04:36,072 - INFO - Fetching: Foreign Affairs
+2026-02-27 17:04:39,102 - INFO - Fetching: CSIS
+2026-02-27 17:04:40,043 - INFO - Fetching: Brookings
+2026-02-27 17:04:40,924 - INFO - Fetching: RAND
+2026-02-27 17:04:41,517 - INFO - Fetching: Defense News
+2026-02-27 17:04:42,460 - INFO - Fetching: Jane's Defence
+2026-02-27 17:04:42,828 - INFO - Fetching: Stratfor
+2026-02-27 17:04:42,844 - INFO - Collected 158 unique articles
+2026-02-27 17:04:42,844 - INFO - <<< Completed: collect
+2026-02-27 17:04:42,844 - INFO - >>> Running: extract
+2026-02-27 17:05:56,697 - INFO - <<< Completed: extract
+2026-02-27 17:05:56,697 - INFO - >>> Running: analyze
+2026-02-27 17:07:56,711 - INFO - <<< Completed: analyze
+2026-02-27 17:07:56,711 - INFO - >>> Running: assess_risk
+2026-02-27 17:08:35,172 - INFO - <<< Completed: assess_risk
+2026-02-27 17:08:35,172 - INFO - >>> Running: market
+2026-02-27 17:08:35,172 - INFO - Analyzing market impacts...
+2026-02-27 17:12:20,394 - INFO - ==================================================
+2026-02-27 17:12:20,394 - INFO - Starting LAGIS Intelligence Pipeline
+2026-02-27 17:12:20,394 - INFO - Timestamp: 2026-02-27T17:12:20.394062
+2026-02-27 17:12:20,394 - INFO - ==================================================
+2026-02-27 17:12:20,396 - INFO - >>> Running: collect
+2026-02-27 17:12:20,396 - INFO - Collector initialized with 30 feeds
+2026-02-27 17:12:20,396 - INFO - Fetching: Reuters World
+2026-02-27 17:12:21,390 - INFO - Fetching: BBC World
+2026-02-27 17:12:23,336 - INFO - Fetching: Al Jazeera
+2026-02-27 17:12:23,990 - INFO - Fetching: AP News
+2026-02-27 17:12:24,006 - INFO - Fetching: CNN World
+2026-02-27 17:12:24,792 - INFO - Fetching: Guardian World
+2026-02-27 17:12:25,485 - INFO - Fetching: NYT World
+2026-02-27 17:12:26,103 - INFO - Fetching: Washington Post
+2026-02-27 17:12:36,307 - INFO - Fetching: Fox News World
+2026-02-27 17:12:36,682 - INFO - Fetching: ABC News
+2026-02-27 17:12:38,433 - INFO - Fetching: CBS News
+2026-02-27 17:12:39,215 - INFO - Fetching: NBC News
+2026-02-27 17:12:39,594 - INFO - Fetching: Sky News
+2026-02-27 17:12:40,213 - INFO - Fetching: DW World
+2026-02-27 17:12:41,324 - INFO - Fetching: France24
+2026-02-27 17:12:42,106 - INFO - Fetching: Euronews
+2026-02-27 17:12:42,866 - INFO - Fetching: BBC Business
+2026-02-27 17:12:43,782 - INFO - Fetching: Reuters Business
+2026-02-27 17:12:44,201 - INFO - Fetching: Bloomberg
+2026-02-27 17:12:45,485 - INFO - Fetching: Financial Times
+2026-02-27 17:12:46,533 - INFO - Fetching: CNBC
+2026-02-27 17:12:47,320 - INFO - Fetching: MarketWatch
+2026-02-27 17:12:48,680 - INFO - Fetching: Economist
+2026-02-27 17:12:48,896 - INFO - Fetching: Foreign Affairs
+2026-02-27 17:12:49,669 - INFO - Fetching: CSIS
+2026-02-27 17:12:49,976 - INFO - Fetching: Brookings
+2026-02-27 17:12:50,527 - INFO - Fetching: RAND
+2026-02-27 17:12:50,834 - INFO - Fetching: Defense News
+2026-02-27 17:12:51,740 - INFO - Fetching: Jane's Defence
+2026-02-27 17:12:51,972 - INFO - Fetching: Stratfor
+2026-02-27 17:12:51,988 - INFO - Collected 158 unique articles
+2026-02-27 17:12:51,988 - INFO - <<< Completed: collect
+2026-02-27 17:12:51,988 - INFO - >>> Running: extract
+2026-02-27 17:13:48,473 - INFO - <<< Completed: extract
+2026-02-27 17:13:48,473 - INFO - >>> Running: analyze
+2026-02-27 17:15:19,723 - INFO - <<< Completed: analyze
+2026-02-27 17:15:19,723 - INFO - >>> Running: assess_risk
+2026-02-27 17:15:58,929 - INFO - <<< Completed: assess_risk
+2026-02-27 17:15:58,929 - INFO - >>> Running: market
+2026-02-27 17:15:58,929 - INFO - Analyzing market impacts...
+2026-02-27 17:17:04,686 - INFO - Market analysis complete
+2026-02-27 17:17:04,686 - INFO - <<< Completed: market
+2026-02-27 17:17:04,687 - INFO - >>> Running: generate_brief
+2026-02-27 17:18:07,084 - INFO - <<< Completed: generate_brief
+2026-02-27 17:18:07,084 - INFO - ==================================================
+2026-02-27 17:18:07,084 - INFO - Pipeline Complete
+2026-02-27 17:18:07,084 - INFO - Final status: briefed
+2026-02-27 17:18:07,084 - INFO - ==================================================
+2026-02-27 17:39:31,898 - INFO - ==================================================
+2026-02-27 17:39:31,898 - INFO - Starting LAGIS Intelligence Pipeline
+2026-02-27 17:39:31,898 - INFO - Timestamp: 2026-02-27T17:39:31.898029
+2026-02-27 17:39:31,898 - INFO - ==================================================
+2026-02-27 17:39:31,898 - INFO - >>> Running: collect
+2026-02-27 17:39:31,898 - INFO - Collector initialized with 30 feeds
+2026-02-27 17:39:31,898 - INFO - Fetching: Reuters World
+2026-02-27 17:39:32,826 - INFO - Fetching: BBC World
+2026-02-27 17:39:34,758 - INFO - Fetching: Al Jazeera
+2026-02-27 17:39:35,436 - INFO - Fetching: AP News
+2026-02-27 17:39:35,482 - INFO - Fetching: CNN World
+2026-02-27 17:39:36,145 - INFO - Fetching: Guardian World
+2026-02-27 17:39:36,821 - INFO - Fetching: NYT World
+2026-02-27 17:39:37,451 - INFO - Fetching: Washington Post
+2026-02-27 17:49:31,858 - INFO - ==================================================
+2026-02-27 17:49:31,858 - INFO - Starting LAGIS Intelligence Pipeline
+2026-02-27 17:49:31,858 - INFO - Timestamp: 2026-02-27T17:49:31.858720
+2026-02-27 17:49:31,858 - INFO - ==================================================
+2026-02-27 17:49:31,858 - INFO - >>> Running: collect
+2026-02-27 17:49:31,858 - INFO - Collector initialized with 30 feeds
+2026-02-27 17:49:31,858 - INFO - Fetching: Reuters World
+2026-02-27 17:49:32,575 - INFO - Fetching: BBC World
+2026-02-27 17:49:34,262 - INFO - Fetching: Al Jazeera
+2026-02-27 17:49:35,155 - INFO - Fetching: AP News
+2026-02-27 17:49:35,179 - INFO - Fetching: CNN World
+2026-02-27 17:49:36,213 - INFO - Fetching: Guardian World
+2026-02-27 17:49:36,874 - INFO - Fetching: NYT World
+2026-02-27 17:49:37,497 - INFO - Fetching: Washington Post
+2026-02-27 17:49:47,128 - INFO - Fetching: Fox News World
+2026-02-27 17:49:47,498 - INFO - Fetching: ABC News
+2026-02-27 17:49:48,755 - INFO - Fetching: CBS News
+2026-02-27 17:49:49,351 - INFO - Fetching: NBC News
+2026-02-27 17:49:50,206 - INFO - Fetching: Sky News
+2026-02-27 17:49:50,789 - INFO - Fetching: DW World
+2026-02-27 17:49:51,957 - INFO - Fetching: France24
+2026-02-27 17:49:52,692 - INFO - Fetching: Euronews
+2026-02-27 17:49:53,226 - INFO - Fetching: BBC Business
+2026-02-27 17:49:53,928 - INFO - Fetching: Reuters Business
+2026-02-27 17:49:54,334 - INFO - Fetching: Bloomberg
+2026-02-27 17:49:55,674 - INFO - Fetching: Financial Times
+2026-02-27 17:49:57,042 - INFO - Fetching: CNBC
+2026-02-27 17:49:58,241 - INFO - Fetching: MarketWatch
+2026-02-27 17:49:59,614 - INFO - Fetching: Economist
+2026-02-27 17:49:59,831 - INFO - Fetching: Foreign Affairs
+2026-02-27 17:50:00,595 - INFO - Fetching: CSIS
+2026-02-27 17:50:01,465 - INFO - Fetching: Brookings
+2026-02-27 17:50:02,621 - INFO - Fetching: RAND
+2026-02-27 17:50:02,799 - INFO - Fetching: Defense News
+2026-02-27 17:50:03,696 - INFO - Fetching: Jane's Defence
+2026-02-27 17:50:03,927 - INFO - Fetching: Stratfor
+2026-02-27 17:50:03,941 - INFO - Collected 158 unique articles
+2026-02-27 17:50:03,941 - INFO - <<< Completed: collect
+2026-02-27 17:50:03,941 - INFO - >>> Running: extract
+2026-02-27 17:51:08,443 - INFO - <<< Completed: extract
+2026-02-27 17:51:08,443 - INFO - >>> Running: analyze
+2026-02-27 17:53:08,476 - INFO - <<< Completed: analyze
+2026-02-27 17:53:08,476 - INFO - >>> Running: assess_risk
+2026-02-27 17:53:41,555 - INFO - <<< Completed: assess_risk
+2026-02-27 17:53:41,555 - INFO - >>> Running: market
+2026-02-27 17:53:41,555 - INFO - Analyzing market impacts...
+2026-02-27 18:09:43,622 - INFO - ==================================================
+2026-02-27 18:09:43,622 - INFO - Starting LAGIS Intelligence Pipeline
+2026-02-27 18:09:43,622 - INFO - Timestamp: 2026-02-27T18:09:43.622027
+2026-02-27 18:09:43,622 - INFO - ==================================================
+2026-02-27 18:09:43,622 - INFO - >>> Running: collect
+2026-02-27 18:09:43,622 - INFO - Collector initialized with 30 feeds
+2026-02-27 18:09:43,622 - INFO - Fetching: Reuters World
+2026-02-27 18:09:44,618 - INFO - Fetching: BBC World
+2026-02-27 18:09:46,716 - INFO - Fetching: Al Jazeera
+2026-02-27 18:09:47,522 - INFO - Fetching: AP News
+2026-02-27 18:09:47,585 - INFO - Fetching: CNN World
+2026-02-27 18:09:48,483 - INFO - Fetching: Guardian World
+2026-02-27 18:09:49,338 - INFO - Fetching: NYT World
+2026-02-27 18:09:50,022 - INFO - Fetching: Washington Post
+2026-02-27 18:09:59,122 - INFO - Fetching: Fox News World
+2026-02-27 18:09:59,479 - INFO - Fetching: ABC News
+2026-02-27 18:10:00,914 - INFO - Fetching: CBS News
+2026-02-27 18:10:01,631 - INFO - Fetching: NBC News
+2026-02-27 18:10:02,619 - INFO - Fetching: Sky News
+2026-02-27 18:10:03,310 - INFO - Fetching: DW World
+2026-02-27 18:10:04,626 - INFO - Fetching: France24
+2026-02-27 18:10:05,225 - INFO - Fetching: Euronews
+2026-02-27 18:10:05,731 - INFO - Fetching: BBC Business
+2026-02-27 18:10:06,399 - INFO - Fetching: Reuters Business
+2026-02-27 18:10:06,820 - INFO - Fetching: Bloomberg
+2026-02-27 18:10:07,998 - INFO - Fetching: Financial Times
+2026-02-27 18:10:09,229 - INFO - Fetching: CNBC
+2026-02-27 18:10:10,916 - INFO - Fetching: MarketWatch
+2026-02-27 18:10:12,411 - INFO - Fetching: Economist
+2026-02-27 18:10:12,892 - INFO - Fetching: Foreign Affairs
+2026-02-27 18:10:13,702 - INFO - Fetching: CSIS
+2026-02-27 18:10:14,492 - INFO - Fetching: Brookings
+2026-02-27 18:10:15,515 - INFO - Fetching: RAND
+2026-02-27 18:10:15,851 - INFO - Fetching: Defense News
+2026-02-27 18:10:16,973 - INFO - Fetching: Jane's Defence
+2026-02-27 18:10:17,223 - INFO - Fetching: Stratfor
+2026-02-27 18:10:17,235 - INFO - Collected 158 unique articles
+2026-02-27 18:10:17,235 - INFO - <<< Completed: collect
+2026-02-27 18:10:17,235 - INFO - >>> Running: extract
+2026-02-27 18:11:31,455 - INFO - <<< Completed: extract
+2026-02-27 18:11:31,457 - INFO - >>> Running: analyze
+2026-02-27 18:13:31,465 - INFO - <<< Completed: analyze
+2026-02-27 18:13:31,467 - INFO - >>> Running: assess_risk
+2026-02-27 18:14:08,653 - INFO - <<< Completed: assess_risk
+2026-02-27 18:14:08,654 - INFO - >>> Running: market
+2026-02-27 18:14:08,654 - INFO - Analyzing market impacts...
