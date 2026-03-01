@@ -1,35 +1,51 @@
-# LAGIS - Dockerfile
-# Local Autonomous Geopolitical Intelligence System
-
 FROM python:3.11-slim
 
-# Set working directory
-WORKDIR /app
-
-# Install system dependencies
+# -----------------------------
+# SYSTEM DEPENDENCIES
+# -----------------------------
 RUN apt-get update && apt-get install -y \
     curl \
+    ca-certificates \
+    zstd \
+    sqlite3 \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Ollama (for local LLM)
+# -----------------------------
+# INSTALL OLLAMA
+# -----------------------------
 RUN curl -fsSL https://ollama.com/install.sh | sh
 
-# Copy requirements first for better caching
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# -----------------------------
+# WORK DIRECTORY
+# -----------------------------
+WORKDIR /app
 
-# Copy application code
+# -----------------------------
+# COPY PROJECT
+# -----------------------------
 COPY . .
 
-# Create necessary directories
-RUN mkdir -p /app/data /app/memory /app/logs /app/output/briefs /app/config /app/docs
+# -----------------------------
+# PYTHON DEPENDENCIES
+# -----------------------------
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Set environment variables
-ENV PYTHONUNBUFFERED=1
-ENV OLLAMA_HOST=0.0.0.0:11434
+# -----------------------------
+# CREATE PERSISTENT DIRECTORIES
+# -----------------------------
+RUN mkdir -p /app/data /app/logs
 
-# Expose Ollama port
+# -----------------------------
+# EXPOSE OLLAMA PORT
+# -----------------------------
 EXPOSE 11434
 
-# Default command runs the pipeline
-CMD ["python", "main.py", "run"]
+# -----------------------------
+# START SYSTEM
+# -----------------------------
+CMD bash -c "\
+ollama serve & \
+sleep 10 && \
+ollama pull llama3.1:8b && \
+ollama pull nomic-embed-text && \
+python main.py"
