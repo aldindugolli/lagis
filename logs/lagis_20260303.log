@@ -1,0 +1,96 @@
+2026-03-03 15:22:00,634 - INFO - ==================================================
+2026-03-03 15:22:00,634 - INFO - Starting LAGIS Intelligence Pipeline
+2026-03-03 15:22:00,634 - INFO - Timestamp: 2026-03-03T15:22:00.634755
+2026-03-03 15:22:00,634 - INFO - ==================================================
+2026-03-03 15:22:00,634 - INFO - >>> Running: collect
+2026-03-03 15:22:00,654 - INFO - Collector initialized with 30 feeds
+2026-03-03 15:22:00,654 - INFO - Fetching: Reuters World
+2026-03-03 15:22:01,607 - INFO - Fetching: BBC World
+2026-03-03 15:22:03,631 - INFO - Fetching: Al Jazeera
+2026-03-03 15:22:04,303 - INFO - Fetching: AP News
+2026-03-03 15:22:04,356 - INFO - Fetching: CNN World
+2026-03-03 15:22:05,237 - INFO - Fetching: Guardian World
+2026-03-03 15:22:06,069 - INFO - Fetching: NYT World
+2026-03-03 15:22:07,021 - INFO - Fetching: Washington Post
+2026-03-03 15:22:18,096 - INFO - Fetching: Fox News World
+2026-03-03 15:22:18,542 - INFO - Fetching: ABC News
+2026-03-03 15:22:20,250 - INFO - Fetching: CBS News
+2026-03-03 15:22:20,906 - INFO - Fetching: NBC News
+2026-03-03 15:22:21,473 - INFO - Fetching: Sky News
+2026-03-03 15:22:22,016 - INFO - Fetching: DW World
+2026-03-03 15:22:22,960 - INFO - Fetching: France24
+2026-03-03 15:22:23,601 - INFO - Fetching: Euronews
+2026-03-03 15:22:24,105 - INFO - Fetching: BBC Business
+2026-03-03 15:22:24,793 - INFO - Fetching: Reuters Business
+2026-03-03 15:22:25,304 - INFO - Fetching: Bloomberg
+2026-03-03 15:22:26,443 - INFO - Fetching: Financial Times
+2026-03-03 15:22:27,673 - INFO - Fetching: CNBC
+2026-03-03 15:22:28,881 - INFO - Fetching: MarketWatch
+2026-03-03 15:22:29,947 - INFO - Fetching: Economist
+2026-03-03 15:22:30,167 - INFO - Fetching: Foreign Affairs
+2026-03-03 15:22:32,956 - INFO - Fetching: CSIS
+2026-03-03 15:22:33,838 - INFO - Fetching: Brookings
+2026-03-03 15:22:35,958 - INFO - Fetching: RAND
+2026-03-03 15:22:36,364 - INFO - Fetching: Defense News
+2026-03-03 15:22:37,341 - INFO - Fetching: Jane's Defence
+2026-03-03 15:22:37,960 - INFO - Fetching: Stratfor
+2026-03-03 15:22:37,987 - INFO - Collected 156 unique articles
+2026-03-03 15:22:37,988 - INFO - <<< Completed: collect
+2026-03-03 15:22:37,988 - INFO - >>> Running: archive
+2026-03-03 15:22:38,010 - INFO - Archive initialized - 193 articles already archived
+2026-03-03 15:22:38,020 - INFO - Archived 132 new articles (132 total today)
+2026-03-03 15:22:38,020 - INFO - Archive complete: 132 new articles saved
+2026-03-03 15:22:38,020 - INFO - <<< Completed: archive
+2026-03-03 15:22:38,020 - INFO - >>> Running: embed_memory
+2026-03-03 15:22:38,025 - INFO - Knowledge base initialized at C:\Users\Aldin\Desktop\Projects\GeoIntelOpenCode\data\knowledge.db
+2026-03-03 15:22:42,882 - INFO - Knowledge: stored 132, skipped 24
+2026-03-03 15:22:42,882 - INFO - Knowledge processing complete: {'stored': 132, 'skipped': 24}
+2026-03-03 15:22:42,882 - INFO - <<< Completed: embed_memory
+2026-03-03 15:22:42,882 - INFO - >>> Running: retrieve_context
+2026-03-03 15:22:42,882 - WARNING - No events to retrieve context for
+2026-03-03 15:22:42,882 - INFO - <<< Completed: retrieve_context
+2026-03-03 15:22:42,882 - INFO - >>> Running: extract
+2026-03-03 15:23:51,003 - INFO - <<< Completed: extract
+2026-03-03 15:23:51,003 - INFO - >>> Running: analyze
+2026-03-03 15:25:51,022 - INFO - <<< Completed: analyze
+2026-03-03 15:25:51,022 - INFO - >>> Running: debate
+2026-03-03 15:25:51,059 - INFO - Running debate on 5 events with 4 perspectives
+2026-03-03 15:26:52,410 - INFO -   hawk: complete
+2026-03-03 15:27:53,415 - INFO -   dove: complete
+2026-03-03 15:28:54,330 - INFO -   economic: complete
+2026-03-03 15:29:55,981 - INFO -   regional: complete
+2026-03-03 15:31:35,746 - INFO - Debate complete - consensus: unknown
+2026-03-03 15:31:35,746 - INFO - <<< Completed: debate
+2026-03-03 15:31:35,746 - INFO - >>> Running: assess_risk
+2026-03-03 15:32:15,156 - INFO - <<< Completed: assess_risk
+2026-03-03 15:32:15,156 - INFO - >>> Running: market
+2026-03-03 15:32:15,156 - INFO - Analyzing market impacts...
+2026-03-03 15:33:29,520 - INFO - Market analysis complete
+2026-03-03 15:33:29,523 - INFO - <<< Completed: market
+2026-03-03 15:33:29,523 - INFO - >>> Running: kosovo
+2026-03-03 15:33:29,523 - INFO - No Kosovo-relevant events found
+2026-03-03 15:33:29,523 - INFO - <<< Completed: kosovo
+2026-03-03 15:33:29,523 - INFO - >>> Running: trend_tracking
+2026-03-03 15:33:29,524 - INFO - World Model initialized at C:\Users\Aldin\Desktop\Projects\GeoIntelOpenCode\data\world_state.db
+2026-03-03 15:33:29,530 - INFO -   [ESCALATING] Iran: escalating (change: 7.6)
+2026-03-03 15:33:29,530 - INFO -   [ESCALATING] Middle East: escalating (change: 8.0)
+2026-03-03 15:33:29,530 - INFO -   [ESCALATING] Europe: escalating (change: 6.0)
+2026-03-03 15:33:29,530 - INFO - <<< Completed: trend_tracking
+2026-03-03 15:33:29,537 - INFO - >>> Running: research_director
+2026-03-03 15:33:29,537 - INFO - Skipping research: Only 0 high-risk countries (threshold: 2)
+2026-03-03 15:33:29,537 - INFO - <<< Skipped: research_director (low_risk (0 countries))
+2026-03-03 15:33:29,537 - INFO - >>> Running: alert_monitor
+2026-03-03 15:33:29,537 - INFO - Escalation index: 3.9 (low)
+2026-03-03 15:33:29,537 - INFO - <<< Completed: alert_monitor
+2026-03-03 15:33:29,537 - INFO - >>> Running: talent_intel
+2026-03-03 15:33:29,537 - INFO - Talent intel: 2 signals detected
+2026-03-03 15:33:29,537 - INFO - <<< Completed: talent_intel
+2026-03-03 15:33:29,537 - INFO - >>> Running: generate_brief
+2026-03-03 15:34:31,299 - INFO - Telegram service enabled
+2026-03-03 15:34:32,172 - INFO - Message sent successfully
+2026-03-03 15:34:32,174 - INFO - <<< Completed: generate_brief
+2026-03-03 15:34:32,174 - INFO - ==================================================
+2026-03-03 15:34:32,174 - INFO - Pipeline Complete
+2026-03-03 15:34:32,174 - INFO - Final status: briefed
+2026-03-03 15:34:32,174 - INFO - Efficiency: 14 stages run, 1 skipped, 751.5s
+2026-03-03 15:34:32,174 - INFO - ==================================================

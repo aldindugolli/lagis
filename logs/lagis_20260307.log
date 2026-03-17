@@ -1,0 +1,109 @@
+2026-03-07 15:28:33,733 - INFO - ==================================================
+2026-03-07 15:28:33,733 - INFO - Starting LAGIS Intelligence Pipeline
+2026-03-07 15:28:33,733 - INFO - Timestamp: 2026-03-07T15:28:33.733079
+2026-03-07 15:28:33,733 - INFO - ==================================================
+2026-03-07 15:28:33,733 - INFO - >>> Running: collect
+2026-03-07 15:28:33,754 - INFO - Collector initialized with 30 feeds
+2026-03-07 15:28:33,754 - INFO - Fetching: Reuters World
+2026-03-07 15:28:34,785 - INFO - Fetching: BBC World
+2026-03-07 15:28:37,447 - INFO - Fetching: Al Jazeera
+2026-03-07 15:28:38,051 - INFO - Fetching: AP News
+2026-03-07 15:28:38,114 - INFO - Fetching: CNN World
+2026-03-07 15:28:39,083 - INFO - Fetching: Guardian World
+2026-03-07 15:28:39,944 - INFO - Fetching: NYT World
+2026-03-07 15:28:40,604 - INFO - Fetching: Washington Post
+2026-03-07 15:28:49,647 - INFO - Fetching: Fox News World
+2026-03-07 15:28:49,891 - INFO - Fetching: ABC News
+2026-03-07 15:28:50,975 - INFO - Fetching: CBS News
+2026-03-07 15:28:51,656 - INFO - Fetching: NBC News
+2026-03-07 15:28:52,890 - INFO - Fetching: Sky News
+2026-03-07 15:28:53,487 - INFO - Fetching: DW World
+2026-03-07 15:28:54,674 - INFO - Fetching: France24
+2026-03-07 15:28:55,498 - INFO - Fetching: Euronews
+2026-03-07 15:28:56,074 - INFO - Fetching: BBC Business
+2026-03-07 15:28:56,908 - INFO - Fetching: Reuters Business
+2026-03-07 15:28:57,367 - INFO - Fetching: Bloomberg
+2026-03-07 15:28:58,559 - INFO - Fetching: Financial Times
+2026-03-07 15:28:59,708 - INFO - Fetching: CNBC
+2026-03-07 15:29:00,689 - INFO - Fetching: MarketWatch
+2026-03-07 15:29:02,160 - INFO - Fetching: Economist
+2026-03-07 15:29:02,659 - INFO - Fetching: Foreign Affairs
+2026-03-07 15:29:03,782 - INFO - Fetching: CSIS
+2026-03-07 15:29:05,190 - INFO - Fetching: Brookings
+2026-03-07 15:29:06,413 - INFO - Fetching: RAND
+2026-03-07 15:29:06,756 - INFO - Fetching: Defense News
+2026-03-07 15:29:07,740 - INFO - Fetching: Jane's Defence
+2026-03-07 15:29:08,350 - INFO - Fetching: Stratfor
+2026-03-07 15:29:08,369 - INFO - Collected 159 unique articles
+2026-03-07 15:29:08,369 - INFO - <<< Completed: collect
+2026-03-07 15:29:08,370 - INFO - >>> Running: archive
+2026-03-07 15:29:08,403 - INFO - Archive initialized - 500 articles already archived
+2026-03-07 15:29:08,419 - INFO - Archived 141 new articles (141 total today)
+2026-03-07 15:29:08,419 - INFO - Archive complete: 141 new articles saved
+2026-03-07 15:29:08,419 - INFO - <<< Completed: archive
+2026-03-07 15:29:08,419 - INFO - >>> Running: embed_memory
+2026-03-07 15:29:08,431 - INFO - Knowledge base initialized at C:\Users\Aldin\Desktop\Projects\GeoIntelOpenCode\data\knowledge.db
+2026-03-07 15:29:14,197 - INFO - Knowledge: stored 141, skipped 18
+2026-03-07 15:29:14,197 - INFO - Knowledge processing complete: {'stored': 141, 'skipped': 18}
+2026-03-07 15:29:14,197 - INFO - <<< Completed: embed_memory
+2026-03-07 15:29:14,197 - INFO - >>> Running: retrieve_context
+2026-03-07 15:29:14,201 - INFO - World Model initialized at C:\Users\Aldin\Desktop\Projects\GeoIntelOpenCode\data\world_state.db
+2026-03-07 15:29:14,201 - INFO - No events for context retrieval
+2026-03-07 15:29:14,202 - INFO - <<< Completed: retrieve_context
+2026-03-07 15:29:14,202 - INFO - >>> Running: extract
+2026-03-07 15:30:23,169 - INFO - <<< Completed: extract
+2026-03-07 15:30:23,169 - INFO - >>> Running: topic_detection
+2026-03-07 15:30:39,610 - INFO - Detected 5 topics: ['general', 'ukraine_war', 'arctic', 'middle_east', 'iran_nuclear']
+2026-03-07 15:30:39,610 - INFO - <<< Completed: topic_detection
+2026-03-07 15:30:39,611 - INFO - >>> Running: analyze
+2026-03-07 15:32:39,630 - INFO - <<< Completed: analyze
+2026-03-07 15:32:39,630 - INFO - >>> Running: debate
+2026-03-07 15:32:39,720 - INFO - Running debate on 5 events with 4 perspectives
+2026-03-07 15:33:44,758 - INFO -   hawk: complete
+2026-03-07 15:34:50,870 - INFO -   dove: complete
+2026-03-07 15:35:57,180 - INFO -   economic: complete
+2026-03-07 15:37:04,080 - INFO -   regional: complete
+2026-03-07 15:38:42,136 - INFO - Debate complete - consensus: unknown
+2026-03-07 15:38:42,136 - INFO - <<< Completed: debate
+2026-03-07 15:38:42,137 - INFO - >>> Running: assess_risk
+2026-03-07 15:39:41,844 - INFO - <<< Completed: assess_risk
+2026-03-07 15:39:41,844 - INFO - >>> Running: trend_tracking
+2026-03-07 15:39:41,856 - INFO -   [ESCALATING] Russia: escalating (change: 6.0)
+2026-03-07 15:39:41,856 - INFO -   [ESCALATING] Ukraine: escalating (change: 6.0)
+2026-03-07 15:39:41,856 - INFO -   [ESCALATING] Iran: escalating (change: 5.4)
+2026-03-07 15:39:41,857 - INFO -   [ESCALATING] China: escalating (change: 6.0)
+2026-03-07 15:39:41,857 - INFO -   [ESCALATING] Middle East: escalating (change: 8.0)
+2026-03-07 15:39:41,857 - INFO -   [ESCALATING] Europe: escalating (change: 6.0)
+2026-03-07 15:39:41,857 - INFO - <<< Completed: trend_tracking
+2026-03-07 15:39:41,857 - INFO - >>> Running: topic_discovery
+2026-03-07 15:39:59,157 - INFO - Discovered 0 emerging themes: []
+2026-03-07 15:39:59,157 - INFO - <<< Completed: topic_discovery
+2026-03-07 15:39:59,158 - INFO - >>> Running: dossier_builder
+2026-03-07 15:40:21,413 - INFO - Saved dossier: topic_middle_east.json
+2026-03-07 15:40:21,413 - INFO - Created 1 dossiers: ['topic:middle_east']
+2026-03-07 15:40:21,418 - INFO - <<< Completed: dossier_builder
+2026-03-07 15:40:21,418 - INFO - >>> Running: market
+2026-03-07 15:40:21,418 - INFO - Analyzing market impacts...
+2026-03-07 15:41:46,413 - INFO - Market analysis complete
+2026-03-07 15:41:46,414 - INFO - <<< Completed: market
+2026-03-07 15:41:46,414 - INFO - >>> Running: kosovo
+2026-03-07 15:41:46,414 - INFO - No Kosovo-relevant events found
+2026-03-07 15:41:46,414 - INFO - <<< Completed: kosovo
+2026-03-07 15:41:46,414 - INFO - >>> Running: research_director
+2026-03-07 15:41:46,414 - INFO - Skipping research: Only 0 high-risk countries (threshold: 2)
+2026-03-07 15:41:46,415 - INFO - <<< Skipped: research_director (low_risk (0 countries))
+2026-03-07 15:41:46,415 - INFO - >>> Running: alert_monitor
+2026-03-07 15:41:46,415 - INFO - Escalation index: 3.3 (low)
+2026-03-07 15:41:46,415 - INFO - <<< Completed: alert_monitor
+2026-03-07 15:41:46,415 - INFO - >>> Running: talent_intel
+2026-03-07 15:41:46,417 - INFO - Talent intel: 1 signals detected
+2026-03-07 15:41:46,417 - INFO - <<< Completed: talent_intel
+2026-03-07 15:41:46,417 - INFO - >>> Running: generate_brief
+2026-03-07 15:42:56,822 - INFO - Telegram service enabled
+2026-03-07 15:42:57,364 - ERROR - Telegram error: {"ok":false,"error_code":400,"description":"Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 2558"}
+2026-03-07 15:42:57,364 - INFO - <<< Completed: generate_brief
+2026-03-07 15:42:57,364 - INFO - ==================================================
+2026-03-07 15:42:57,364 - INFO - Pipeline Complete
+2026-03-07 15:42:57,364 - INFO - Final status: briefed
+2026-03-07 15:42:57,364 - INFO - Efficiency: 17 stages run, 1 skipped, 863.6s
+2026-03-07 15:42:57,364 - INFO - ==================================================

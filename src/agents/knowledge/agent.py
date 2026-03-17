@@ -234,20 +234,70 @@ class KnowledgeAgent:
             "total_entities": total_entities
         }
     
+    def store_events_batch(self, events: List[Dict[str, Any]]) -> Dict[str, int]:
+        """Store events with embeddings - more targeted than articles"""
+        stored = 0
+        skipped = 0
+        
+        for event in events:
+            event_id = f"event_{event.get('event_title', '')[:30]}_{event.get('created_at', '')[:10]}"
+            
+            content = f"{event.get('event_title', '')} {event.get('summary', '')}"[:1500]
+            embedding = None
+            
+            try:
+                emb = self.llm.embed(content)
+                embedding = json.dumps(emb)
+            except Exception:
+                pass
+            
+            conn = sqlite3.connect(str(self.db_path))
+            cursor = conn.cursor()
+            
+            try:
+                cursor.execute("""
+                    INSERT OR IGNORE INTO knowledge 
+                    (article_id, title, content, embedding, archived_date)
+                    VALUES (?, ?, ?, ?, ?)
+                """, (
+                    event_id,
+                    event.get('event_title', ''),
+                    content,
+                    embedding,
+                    datetime.now().strftime("%Y-%m-%d")
+                ))
+                conn.commit()
+                if cursor.rowcount > 0:
+                    stored += 1
+                else:
+                    skipped += 1
+            except Exception:
+                skipped += 1
+            finally:
+                conn.close()
+        
+        logger.info(f"Knowledge (events): stored {stored}, skipped {skipped}")
+        return {"stored": stored, "skipped": skipped}
+    
     def run(self, state: Dict[str, Any]) -> Dict[str, Any]:
-        """Execute knowledge processing"""
+        """Execute knowledge processing - embed events if available, else articles"""
+        events = state.get("events", [])
         articles = state.get("articles", [])
         
-        if not articles:
-            logger.warning("No articles to process for knowledge base")
+        if events:
+            result = self.store_events_batch(events)
+            state["knowledge_result"] = result
+            state["status"] = "knowledge_built"
+            logger.info(f"Knowledge: embedded {result['stored']} events")
+        elif articles:
+            result = self.store_articles_batch(articles)
+            state["knowledge_result"] = result
+            state["status"] = "knowledge_built"
+            logger.info(f"Knowledge: embedded {result['stored']} articles")
+        else:
+            logger.warning("No articles or events to process for knowledge base")
             state["knowledge_result"] = {"stored": 0}
-            return state
         
-        result = self.store_articles_batch(articles)
-        state["knowledge_result"] = result
-        state["status"] = "knowledge_built"
-        
-        logger.info(f"Knowledge processing complete: {result}")
         return state
     
     def retrieve_context_for_brief(self, query: str, days: int = 30) -> str:

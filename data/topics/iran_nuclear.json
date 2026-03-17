@@ -1,0 +1,18 @@
+{
+  "name": "iran_nuclear",
+  "created_at": "2026-03-08T16:25:21.613937",
+  "event_count": 1,
+  "actors": [
+    "Iran"
+  ],
+  "region": "Middle East",
+  "trend_score": 8,
+  "keywords": [
+    "iran",
+    "nuclear",
+    "uranium",
+    "tehran",
+    "iaea",
+    "enrichment"
+  ]
+}
