@@ -94,13 +94,16 @@ class ArchiveAgent:
     def run(self, state: Dict[str, Any]) -> Dict[str, Any]:
         """Execute archiving - takes state, returns updated state"""
         articles = state.get("articles", [])
+        filtered = state.get("filtered_articles", [])
         
-        if not articles:
+        if not articles and not filtered:
             logger.warning("No articles to archive")
             state["archive_result"] = {"archived_count": 0}
             return state
         
-        result = self.archive_articles(articles)
+        all_to_archive = articles + filtered
+        
+        result = self.archive_articles(all_to_archive)
         state["archive_result"] = result
         state["status"] = "archived"
         

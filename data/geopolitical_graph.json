@@ -1,0 +1,134 @@
+{
+  "Iran": {
+    "allies": [
+      "Russia",
+      "Hezbollah",
+      "Syria",
+      "Houthis"
+    ],
+    "adversaries": [
+      "Israel",
+      "United States",
+      "Saudi Arabia",
+      "US"
+    ],
+    "conflicts": [
+      "Iran-Israel Conflict",
+      "Iran-US Tensions"
+    ],
+    "last_updated": "2026-03-16T13:37:06.737709"
+  },
+  "Israel": {
+    "allies": [
+      "United States",
+      "United Kingdom"
+    ],
+    "adversaries": [
+      "Iran",
+      "Hezbollah",
+      "Hamas",
+      "Syria"
+    ],
+    "conflicts": [
+      "Israel-Gaza War",
+      "Israel-Hezbollah Conflict"
+    ],
+    "last_updated": "2026-03-16T13:37:06.737709"
+  },
+  "Russia": {
+    "allies": [
+      "Iran",
+      "China",
+      "Syria",
+      "North Korea"
+    ],
+    "adversaries": [
+      "Ukraine",
+      "NATO",
+      "United States"
+    ],
+    "conflicts": [
+      "Ukraine War"
+    ],
+    "last_updated": "2026-03-16T13:37:06.737709"
+  },
+  "United States": {
+    "allies": [
+      "Israel",
+      "United Kingdom",
+      "NATO",
+      "Ukraine"
+    ],
+    "adversaries": [
+      "Iran",
+      "North Korea",
+      "Russia"
+    ],
+    "conflicts": [
+      "US-Iran Tensions"
+    ],
+    "last_updated": "2026-03-16T13:37:06.737709"
+  },
+  "China": {
+    "allies": [
+      "Russia",
+      "North Korea"
+    ],
+    "adversaries": [
+      "Taiwan",
+      "United States"
+    ],
+    "conflicts": [
+      "Taiwan Strait Tensions"
+    ],
+    "last_updated": "2026-03-16T13:37:06.737709"
+  },
+  "Ukraine": {
+    "allies": [
+      "United States",
+      "NATO",
+      "European Union"
+    ],
+    "adversaries": [
+      "Russia"
+    ],
+    "conflicts": [
+      "Ukraine War"
+    ],
+    "last_updated": "2026-03-16T13:37:06.737709"
+  },
+  "Hezbollah": {
+    "allies": [
+      "Iran",
+      "Syria"
+    ],
+    "adversaries": [
+      "Israel",
+      "United States"
+    ],
+    "conflicts": [
+      "Israel-Hezbollah Conflict"
+    ],
+    "last_updated": "2026-03-16T13:37:06.737709"
+  },
+  "NATO": {
+    "allies": [
+      "United States",
+      "United Kingdom",
+      "Ukraine"
+    ],
+    "adversaries": [
+      "Russia"
+    ],
+    "conflicts": [],
+    "last_updated": "2026-03-16T13:37:06.737709"
+  },
+  "US": {
+    "allies": [],
+    "adversaries": [
+      "Iran"
+    ],
+    "conflicts": [],
+    "last_updated": "2026-03-16T13:37:06.737709"
+  }
+}

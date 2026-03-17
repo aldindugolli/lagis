@@ -34,7 +34,8 @@ class ExtractorAgent:
     
     def run(self, state: Dict[str, Any]) -> Dict[str, Any]:
         """Execute extraction - takes state, returns updated state"""
-        articles = state.get("articles", [])
+        relevant_articles = state.get("relevant_articles", [])
+        articles = relevant_articles if relevant_articles else state.get("articles", [])
         events = []
         
         # Process only top 5 articles for speed

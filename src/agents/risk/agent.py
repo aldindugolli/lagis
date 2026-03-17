@@ -1,10 +1,14 @@
 # LAGIS - Risk Agent
 # Assesses country-level risk scores
 
+import logging
 from typing import Dict, Any
 
 from src.core.llm.engine import get_llm
 from src.core.memory.memory import get_memory
+from src.orchestration.utils import add_llm_call, skip_stage
+
+logger = logging.getLogger("LAGIS.Risk")
 
 
 RISK_SCHEMA = {
@@ -34,9 +38,15 @@ class RiskAgent:
         self.memory = get_memory()
     
     def run(self, state: Dict[str, Any]) -> Dict[str, Any]:
-        """Execute risk assessment - takes state, returns updated state"""
+        """Execute risk assessment"""
         events = state.get("events", [])
         risk_scores = {}
+        
+        if not events:
+            logger.info("No events for risk assessment")
+            skip_stage(state, "no_events")
+            state["risk_scores"] = {}
+            return state
         
         # Build combined events text
         events_text = "\n".join([
@@ -56,6 +66,8 @@ Provide risk assessment for key countries."""
             max_tokens=1024,
             system="You are a geopolitical risk analyst. Provide risk scores (0-10) for countries mentioned."
         )
+        
+        add_llm_call(state, tokens=500)
         
         # Store simple risk data
         countries = list(set([c for e in events for c in e.get('countries_involved', [])]))

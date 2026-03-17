@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-03-11T15:08:40.804066",
+  "indicators": {
+    "conflict_intensity": 0,
+    "military_activity": 0.0,
+    "economic_stress": 0.0,
+    "diplomatic_tension": 0.8999999999999999
+  },
+  "conflict_zones": [],
+  "sanctions_tracking": [],
+  "alliance_shifts": [],
+  "nuclear_risk": {
+    "nuclear_events_count": 0,
+    "risk_level": "low",
+    "events": []
+  },
+  "overall_index": 9.8
+}

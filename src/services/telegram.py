@@ -53,7 +53,7 @@ class TelegramService:
     
     def send_brief(self, brief_text: str) -> bool:
         """Send daily brief to Telegram"""
-        header = f"📊 *LAGIS Daily Brief*\n{datetime.now().strftime('%Y-%m-%d')}\n\n"
+        header = f"[REPORT] LAGIS Daily Brief - {datetime.now().strftime('%Y-%m-%d')}\n\n"
         return self.send_message(header + brief_text)
     
     def get_updates(self, offset: int = 0, timeout: int = 60) -> list:

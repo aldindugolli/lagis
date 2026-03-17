@@ -1,0 +1,23 @@
+{
+  "military_activity": {
+    "France": [
+      1
+    ],
+    "Kenya": [
+      1
+    ]
+  },
+  "civil_unrest": {
+    "Argentina": [
+      1
+    ],
+    "Qatar": [
+      1
+    ]
+  },
+  "political_instability": {
+    "Iran": [
+      1
+    ]
+  }
+}
