@@ -16,7 +16,7 @@
       "Iran-Israel Conflict",
       "Iran-US Tensions"
     ],
-    "last_updated": "2026-03-16T13:37:06.737709"
+    "last_updated": "2026-04-05T13:46:04.319195"
   },
   "Israel": {
     "allies": [
@@ -27,13 +27,14 @@
       "Iran",
       "Hezbollah",
       "Hamas",
-      "Syria"
+      "Syria",
+      "US"
     ],
     "conflicts": [
       "Israel-Gaza War",
       "Israel-Hezbollah Conflict"
     ],
-    "last_updated": "2026-03-16T13:37:06.737709"
+    "last_updated": "2026-04-05T13:46:04.319195"
   },
   "Russia": {
     "allies": [
@@ -50,7 +51,7 @@
     "conflicts": [
       "Ukraine War"
     ],
-    "last_updated": "2026-03-16T13:37:06.737709"
+    "last_updated": "2026-04-05T13:46:04.319195"
   },
   "United States": {
     "allies": [
@@ -67,7 +68,7 @@
     "conflicts": [
       "US-Iran Tensions"
     ],
-    "last_updated": "2026-03-16T13:37:06.737709"
+    "last_updated": "2026-04-05T13:46:04.319195"
   },
   "China": {
     "allies": [
@@ -81,7 +82,7 @@
     "conflicts": [
       "Taiwan Strait Tensions"
     ],
-    "last_updated": "2026-03-16T13:37:06.737709"
+    "last_updated": "2026-04-05T13:46:04.319195"
   },
   "Ukraine": {
     "allies": [
@@ -95,7 +96,7 @@
     "conflicts": [
       "Ukraine War"
     ],
-    "last_updated": "2026-03-16T13:37:06.737709"
+    "last_updated": "2026-04-05T13:46:04.319195"
   },
   "Hezbollah": {
     "allies": [
@@ -109,7 +110,7 @@
     "conflicts": [
       "Israel-Hezbollah Conflict"
     ],
-    "last_updated": "2026-03-16T13:37:06.737709"
+    "last_updated": "2026-04-05T13:46:04.319195"
   },
   "NATO": {
     "allies": [
@@ -121,14 +122,15 @@
       "Russia"
     ],
     "conflicts": [],
-    "last_updated": "2026-03-16T13:37:06.737709"
+    "last_updated": "2026-04-05T13:46:04.319195"
   },
   "US": {
     "allies": [],
     "adversaries": [
-      "Iran"
+      "Iran",
+      "Israel"
     ],
     "conflicts": [],
-    "last_updated": "2026-03-16T13:37:06.737709"
+    "last_updated": "2026-04-05T13:46:04.319195"
   }
 }

@@ -1,0 +1,105 @@
+{
+  "predictions": [
+    {
+      "id": "921530a0",
+      "timestamp": "2026-04-05",
+      "scenario": "Iran retaliates via proxy forces",
+      "actors": [
+        "Iran",
+        "Hezbollah",
+        "Israel"
+      ],
+      "probability": "HIGH",
+      "timeframe": "24-72h",
+      "expires": "2026-04-08",
+      "resolved": true,
+      "outcome": "correct",
+      "confidence_score": 2,
+      "keywords": [
+        "iran_direct"
+      ],
+      "resolved_date": "2026-04-05"
+    },
+    {
+      "id": "1c0e1295",
+      "timestamp": "2026-04-05",
+      "scenario": "Iran retaliates via proxy forces",
+      "actors": [
+        "Iran",
+        "Hezbollah",
+        "Israel"
+      ],
+      "probability": "HIGH",
+      "timeframe": "24-72h",
+      "expires": "2026-04-08",
+      "resolved": true,
+      "outcome": "correct",
+      "confidence_score": 2,
+      "keywords": [
+        "iran_direct"
+      ],
+      "resolved_date": "2026-04-05"
+    },
+    {
+      "id": "7532cbd1",
+      "timestamp": "2026-04-05",
+      "scenario": "Iran retaliates via proxy forces",
+      "actors": [
+        "Iran",
+        "Hezbollah",
+        "Israel"
+      ],
+      "probability": "HIGH",
+      "timeframe": "24-72h",
+      "expires": "2026-04-08",
+      "resolved": true,
+      "outcome": "correct",
+      "confidence_score": 2,
+      "keywords": [
+        "iran_direct"
+      ],
+      "resolved_date": "2026-04-05"
+    },
+    {
+      "id": "c40715de",
+      "timestamp": "2026-04-05",
+      "scenario": "Iran retaliates via proxy forces",
+      "actors": [
+        "Iran",
+        "Hezbollah",
+        "Israel"
+      ],
+      "probability": "HIGH",
+      "timeframe": "24-72h",
+      "expires": "2026-04-08",
+      "resolved": true,
+      "outcome": "correct",
+      "confidence_score": 2,
+      "keywords": [
+        "iran_direct"
+      ],
+      "resolved_date": "2026-04-05"
+    },
+    {
+      "id": "7ef76e2a",
+      "timestamp": "2026-04-06",
+      "scenario": "Iran retaliates via proxy forces",
+      "actors": [
+        "Iran",
+        "Hezbollah",
+        "Israel"
+      ],
+      "probability": "HIGH",
+      "timeframe": "24-72h",
+      "expires": "2026-04-09",
+      "resolved": true,
+      "outcome": "correct",
+      "confidence_score": 2,
+      "keywords": [
+        "iran_direct"
+      ],
+      "resolved_date": "2026-04-06"
+    }
+  ],
+  "last_updated": "2026-04-06"
+}

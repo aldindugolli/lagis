@@ -21,6 +21,8 @@ class IntelligenceSynthesisAgent:
         try:
             events = state.get("deduplicated_events", []) or state.get("events", [])
             signals = state.get("signal_alerts", [])
+            early_signals = state.get("early_signals", [])
+            relationship_insights = state.get("relationship_insights", [])
             
             if not events:
                 logger.warning("No events for synthesis")
@@ -28,11 +30,12 @@ class IntelligenceSynthesisAgent:
                 state["stability_index"] = 7.0
                 return state
             
-            synthesis = self._analyze_events(events, signals)
+            synthesis = self._analyze_events(events, signals, early_signals, relationship_insights)
             
             state["synthesis"] = synthesis
             
-            stability = self._calculate_stability_index(events, signals)
+            graph = state.get("graph")
+            stability = self._calculate_stability_index(events, signals, early_signals, graph)
             state["stability_index"] = stability
             
             return state
@@ -42,7 +45,7 @@ class IntelligenceSynthesisAgent:
             state["stability_index"] = 7.0
             return state
     
-    def _analyze_events(self, events: List[Dict], signals: List[Dict]) -> Dict:
+    def _analyze_events(self, events: List[Dict], signals: List[Dict], early_signals: List[Dict], relationship_insights: List[str] = None) -> Dict:
         """Rule-based analysis of events"""
         
         countries = set()
@@ -62,7 +65,7 @@ class IntelligenceSynthesisAgent:
         
         summary = self._generate_summary(events, countries)
         implications = self._generate_implications(events)
-        escalation = self._assess_escalation(events)
+        escalation = self._assess_escalation(events, early_signals, relationship_insights)
         next_moves = self._predict_next_moves(events, countries)
         market = self._assess_market_impact(events)
         risk_scores = self._calculate_risk_scores(events, countries)
@@ -70,6 +73,7 @@ class IntelligenceSynthesisAgent:
         return {
             "executive_summary": summary,
             "strategic_implications": implications,
+            "relationship_insights": relationship_insights or [],
             "escalation_outlook": escalation,
             "likely_next_moves": next_moves,
             "market_impact": market,
@@ -113,14 +117,20 @@ class IntelligenceSynthesisAgent:
         
         return implications[:4]
     
-    def _assess_escalation(self, events: List[Dict]) -> Dict:
-        """Assess escalation levels"""
+    def _assess_escalation(self, events: List[Dict], early_signals: List[Dict] = None, relationship_insights: List[str] = None) -> Dict:
+        """Assess escalation levels using events and early signals"""
         high_sev = sum(1 for e in events if isinstance(e, dict) and e.get("severity", 0) >= 8)
         
         d = "HIGH" if high_sev >= 2 else "MODERATE"
         p = "MODERATE" 
         u = "HIGH" if any("US" in str(e) for e in events if isinstance(e, dict)) else "LOW"
         e = "HIGH" if any("oil" in str(e).lower() for e in events) else "LOW"
+        
+        if early_signals:
+            high_confidence_signals = [s for s in early_signals if s.get("confidence") == "high"]
+            if high_confidence_signals:
+                d = "HIGH"
+                p = "HIGH"
         
         return {
             "direct_conflict": d,
@@ -175,7 +185,7 @@ class IntelligenceSynthesisAgent:
         
         return scores
     
-    def _calculate_stability_index(self, events: List[Dict], signals: List[Dict]) -> float:
+    def _calculate_stability_index(self, events: List[Dict], signals: List[Dict], early_signals: List[Dict] = None, graph=None) -> float:
         """Calculate global stability index"""
         base = 8.0
         
@@ -196,6 +206,11 @@ class IntelligenceSynthesisAgent:
                 title = event.get("title", "").lower()
                 if any(kw in title for kw in ["nuclear", "war", "invasion"]):
                     stability -= 0.5
+        
+        if early_signals:
+            high_conf_signals = [s for s in early_signals if s.get("confidence") == "high"]
+            stability -= len(high_conf_signals) * 0.3
+            stability -= len(early_signals) * 0.1
         
         return round(max(0, min(10, stability)), 1)
 

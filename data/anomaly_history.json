@@ -1,0 +1,49 @@
+{
+  "alerts": [
+    {
+      "type": "Silence Anomaly",
+      "description": "Anomalous silence: Iran suddenly inactive despite 26.8 avg signals",
+      "risk": "HIGH",
+      "score": 11,
+      "actors": [
+        "Iran"
+      ],
+      "implication": "Possible information suppression or pre-event calm",
+      "timestamp": "2026-04-05"
+    },
+    {
+      "type": "Silence Anomaly",
+      "description": "Anomalous silence: Iran suddenly inactive despite 27.0 avg signals",
+      "risk": "HIGH",
+      "score": 11,
+      "actors": [
+        "Iran"
+      ],
+      "implication": "Possible information suppression or pre-event calm",
+      "timestamp": "2026-04-05"
+    },
+    {
+      "type": "Silence Anomaly",
+      "description": "Anomalous silence: Iran suddenly inactive despite 27.1 avg signals",
+      "risk": "HIGH",
+      "score": 11,
+      "actors": [
+        "Iran"
+      ],
+      "implication": "Possible information suppression or pre-event calm",
+      "timestamp": "2026-04-05"
+    },
+    {
+      "type": "Silence Anomaly",
+      "description": "Anomalous silence: Iran suddenly inactive despite 27.6 avg signals",
+      "risk": "HIGH",
+      "score": 11,
+      "actors": [
+        "Iran"
+      ],
+      "implication": "Possible information suppression or pre-event calm",
+      "timestamp": "2026-04-06"
+    }
+  ],
+  "last_updated": "2026-04-06"
+}

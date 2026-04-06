@@ -1,0 +1,105 @@
+2026-04-06 13:14:14,045 - INFO - ==================================================
+2026-04-06 13:14:14,045 - INFO - Starting LAGIS Ultra-Optimized Pipeline
+2026-04-06 13:14:14,045 - INFO - Timestamp: 2026-04-06T13:14:14.045556
+2026-04-06 13:14:14,045 - INFO - ==================================================
+2026-04-06 13:14:14,045 - INFO - >>> Running: collect_feeds
+2026-04-06 13:14:14,047 - INFO - Collector initialized with 30 feeds
+2026-04-06 13:14:14,047 - INFO - Fetching 30 feeds in parallel...
+2026-04-06 13:14:14,135 - INFO - Fetched AP News: 0 articles
+2026-04-06 13:14:14,339 - INFO - Fetched Al Jazeera: 8 articles
+2026-04-06 13:14:14,474 - INFO - Fetched Guardian World: 8 articles
+2026-04-06 13:14:14,548 - INFO - Fetched NYT World: 8 articles
+2026-04-06 13:14:14,593 - INFO - Fetched BBC World: 8 articles
+2026-04-06 13:14:14,627 - INFO - Fetched CNN World: 8 articles
+2026-04-06 13:14:14,645 - INFO - Fetched Fox News World: 0 articles
+2026-04-06 13:14:14,783 - INFO - Fetched CBS News: 0 articles
+2026-04-06 13:14:14,903 - INFO - Fetched Euronews: 8 articles
+2026-04-06 13:14:14,928 - INFO - Fetched France24: 8 articles
+2026-04-06 13:14:14,971 - INFO - Fetched BBC Business: 8 articles
+2026-04-06 13:14:15,225 - INFO - Fetched ABC News: 8 articles
+2026-04-06 13:14:15,303 - INFO - Fetched Sky News: 0 articles
+2026-04-06 13:14:15,367 - INFO - Fetched Reuters Business: 0 articles
+2026-04-06 13:14:15,395 - INFO - Fetched NBC News: 0 articles
+2026-04-06 13:14:15,645 - INFO - Fetched Foreign Affairs: 8 articles
+2026-04-06 13:14:15,655 - INFO - Fetched Economist: 0 articles
+2026-04-06 13:14:15,732 - INFO - Fetched Reuters World: 0 articles
+2026-04-06 13:14:15,787 - INFO - Fetched MarketWatch: 8 articles
+2026-04-06 13:14:16,027 - INFO - Fetched Bloomberg: 8 articles
+2026-04-06 13:14:16,041 - INFO - Fetched Stratfor: 0 articles
+2026-04-06 13:14:16,094 - INFO - Fetched CSIS: 0 articles
+2026-04-06 13:14:16,094 - INFO - Fetched RAND: 0 articles
+2026-04-06 13:14:16,155 - INFO - Fetched DW World: 8 articles
+2026-04-06 13:14:16,323 - INFO - Fetched Jane's Defence: 0 articles
+2026-04-06 13:14:16,484 - INFO - Fetched Defense News: 0 articles
+2026-04-06 13:14:16,537 - INFO - Fetched CNBC: 8 articles
+2026-04-06 13:14:19,228 - INFO - Fetched Brookings: 0 articles
+2026-04-06 13:14:22,688 - INFO - Fetched Washington Post: 8 articles
+2026-04-06 13:14:37,315 - INFO - Fetched Financial Times: 8 articles
+2026-04-06 13:14:43,692 - INFO - Collected 128 unique articles from 30 feeds
+2026-04-06 13:14:43,695 - INFO - <<< Completed: collect_feeds
+2026-04-06 13:14:43,695 - INFO - >>> Running: archive
+2026-04-06 13:14:43,968 - INFO - Archive initialized - 2643 articles already archived
+2026-04-06 13:14:43,968 - INFO - Archived 97 new articles (97 total today)
+2026-04-06 13:14:43,968 - INFO - Archive complete: 97 new articles saved
+2026-04-06 13:14:43,972 - INFO - <<< Completed: archive
+2026-04-06 13:14:43,972 - INFO - >>> Running: article_filter
+2026-04-06 13:14:43,973 - INFO - Article filter: 58 relevant (score >= 4), 70 filtered out
+2026-04-06 13:14:43,973 - INFO - Filtered 128 articles -> 58 relevant
+2026-04-06 13:14:43,973 - INFO - <<< Completed: article_filter
+2026-04-06 13:14:43,973 - INFO - >>> Running: early_signal
+2026-04-06 13:14:43,983 - INFO - Intelligence signals generated: 4
+2026-04-06 13:14:43,983 - INFO -   - Potential military escalation involving Iran (high)
+2026-04-06 13:14:43,983 - INFO -   - Increased conflict-related signals globally (high)
+2026-04-06 13:14:43,983 - INFO -   - Military developments in Ukraine conflict (high)
+2026-04-06 13:14:43,983 - INFO - <<< Completed: early_signal
+2026-04-06 13:14:43,983 - INFO - >>> Running: black_swan
+2026-04-06 13:14:44,014 - INFO - Black Swan: Detected 1 anomalies
+2026-04-06 13:14:44,014 - INFO -   [HIGH] Silence Anomaly: Anomalous silence: Iran suddenly inactive despite 
+2026-04-06 13:14:44,014 - INFO - <<< Completed: black_swan
+2026-04-06 13:14:44,014 - INFO - >>> Running: quick_analysis
+2026-04-06 13:14:44,014 - INFO - <<< Completed: quick_analysis
+2026-04-06 13:14:44,014 - INFO - >>> Running: scenario_engine
+2026-04-06 13:14:44,014 - INFO - Generated 1 scenarios
+2026-04-06 13:14:44,014 - INFO -   [HIGH] Iran retaliates via proxy forces (24-72h)
+2026-04-06 13:14:44,014 - INFO - <<< Completed: scenario_engine
+2026-04-06 13:14:44,014 - INFO - >>> Running: signal_detection
+2026-04-06 13:14:44,017 - INFO - <<< Completed: signal_detection
+2026-04-06 13:14:44,017 - INFO - >>> Running: context_retrieval
+2026-04-06 13:14:44,034 - INFO - Knowledge base initialized at C:\Users\Aldin\Desktop\Projects\GeoIntelOpenCode\data\knowledge.db
+2026-04-06 13:14:44,036 - INFO - World Model initialized at C:\Users\Aldin\Desktop\Projects\GeoIntelOpenCode\data\world_state.db
+2026-04-06 13:14:44,036 - INFO - Context retrieved for: 0 countries, 0 issues
+2026-04-06 13:14:44,036 - INFO - <<< Completed: context_retrieval
+2026-04-06 13:14:44,036 - INFO - >>> Running: embed_events
+2026-04-06 13:14:44,144 - INFO - Knowledge (events): stored 0, skipped 3
+2026-04-06 13:14:44,144 - INFO - Knowledge: embedded 0 events
+2026-04-06 13:14:44,144 - INFO - <<< Completed: embed_events
+2026-04-06 13:14:44,144 - INFO - >>> Running: memory_graph
+2026-04-06 13:14:44,146 - INFO - New relationships: 1
+2026-04-06 13:14:44,146 - INFO -   Israel --[conflict]--> United States
+2026-04-06 13:14:44,149 - INFO - <<< Completed: memory_graph
+2026-04-06 13:14:44,149 - INFO - >>> Running: intelligence_synthesis
+2026-04-06 13:14:44,149 - INFO - <<< Completed: intelligence_synthesis
+2026-04-06 13:14:44,149 - INFO - >>> Running: kosovo_impact
+2026-04-06 13:14:44,149 - INFO - No Kosovo-relevant events found
+2026-04-06 13:14:44,149 - INFO - <<< Completed: kosovo_impact
+2026-04-06 13:14:44,149 - INFO - >>> Running: learning_loop
+2026-04-06 13:14:44,163 - INFO - Stored 1 predictions
+2026-04-06 13:14:44,163 - INFO - Prediction confirmed: Iran retaliates via proxy forces
+2026-04-06 13:14:44,174 - INFO - Updated 20 graph edge weights based on prediction outcomes
+2026-04-06 13:14:44,174 - INFO - Learning: accuracy=100%, total=5, confidence=High
+2026-04-06 13:14:44,174 - INFO - <<< Completed: learning_loop
+2026-04-06 13:14:44,174 - INFO - >>> Running: strategy
+2026-04-06 13:14:44,174 - INFO - Strategy: Generated 3 recommendations
+2026-04-06 13:14:44,176 - INFO -   [CRITICAL] IMMEDIATE: Increase surveillance of Iran communications due to abnorma
+2026-04-06 13:14:44,176 - INFO -   [HIGH] URGENT: Monitor Hezbollah activity for indicators of Iran-directed ret
+2026-04-06 13:14:44,176 - INFO -   [HIGH] URGENT: Monitor Iranian Revolutionary Guard Corps positioning and regi
+2026-04-06 13:14:44,176 - INFO - <<< Completed: strategy
+2026-04-06 13:14:44,176 - INFO - >>> Running: generate_brief
+2026-04-06 13:14:44,725 - INFO - Telegram service enabled
+2026-04-06 13:14:46,434 - INFO - Message sent successfully (1 chunks)
+2026-04-06 13:14:46,436 - INFO - <<< Completed: generate_brief
+2026-04-06 13:14:46,436 - INFO - ==================================================
+2026-04-06 13:14:46,436 - INFO - Pipeline Complete
+2026-04-06 13:14:46,436 - INFO - Final status: briefed
+2026-04-06 13:14:46,436 - INFO - Efficiency: 16 run, 0 skipped, 32.4s
+2026-04-06 13:14:46,436 - INFO - ==================================================

@@ -1,0 +1,13 @@
+{
+  "total_predictions": 5,
+  "correct_predictions": 5,
+  "incorrect_predictions": 0,
+  "pending_predictions": 0,
+  "accuracy_rate": 1.0,
+  "actor_accuracy": {
+    "Iran": 1.0,
+    "Hezbollah": 1.0,
+    "Israel": 1.0
+  },
+  "last_updated": "2026-04-06"
+}

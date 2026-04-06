@@ -9,6 +9,9 @@ from src.core.state.state import create_initial_state
 from src.agents.collector.agent import run as collector_run
 from src.agents.archive.agent import run as archive_run
 from src.agents.filter.agent import run as filter_run
+from src.agents.early_signal.agent import run as early_signal_run
+from src.agents.black_swan.agent import run as black_swan_run
+from src.agents.scenario_engine.agent import run as scenario_engine_run
 from src.agents.quick_analysis.agent import run as quick_analysis_run
 from src.agents.signals.agent import run as signals_run
 from src.agents.context.agent import run as context_run
@@ -16,6 +19,8 @@ from src.agents.knowledge.agent import run as knowledge_run
 from src.agents.intelligence_synthesis.agent import run as synthesis_run
 from src.agents.memory_graph.agent import run as memory_graph_run
 from src.agents.kosovo.agent import run as kosovo_run
+from src.agents.learning_loop.agent import run as learning_loop_run
+from src.agents.strategy.agent import run as strategy_run
 from src.agents.brief.agent import run as brief_run
 
 logger = logging.getLogger("LAGIS.Graph")
@@ -29,13 +34,18 @@ class IntelligenceGraph:
             ("collect_feeds", collector_run),
             ("archive", archive_run),
             ("article_filter", filter_run),
+            ("early_signal", early_signal_run),
+            ("black_swan", black_swan_run),
             ("quick_analysis", quick_analysis_run),
+            ("scenario_engine", scenario_engine_run),
             ("signal_detection", signals_run),
             ("context_retrieval", context_run),
             ("embed_events", knowledge_run),
             ("memory_graph", memory_graph_run),
             ("intelligence_synthesis", synthesis_run),
             ("kosovo_impact", kosovo_run),
+            ("learning_loop", learning_loop_run),
+            ("strategy", strategy_run),
             ("generate_brief", brief_run),
         ]
     

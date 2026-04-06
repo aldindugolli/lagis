@@ -1,0 +1,78 @@
+2026-03-26 14:15:27,089 - INFO - ==================================================
+2026-03-26 14:15:27,089 - INFO - Starting LAGIS Ultra-Optimized Pipeline
+2026-03-26 14:15:27,089 - INFO - Timestamp: 2026-03-26T14:15:27.089984
+2026-03-26 14:15:27,091 - INFO - ==================================================
+2026-03-26 14:15:27,091 - INFO - >>> Running: collect_feeds
+2026-03-26 14:15:27,112 - INFO - Collector initialized with 30 feeds
+2026-03-26 14:15:27,113 - INFO - Fetching 30 feeds in parallel...
+2026-03-26 14:15:27,342 - INFO - Fetched AP News: 0 articles
+2026-03-26 14:15:27,555 - INFO - Fetched Fox News World: 0 articles
+2026-03-26 14:15:27,582 - INFO - Fetched NYT World: 8 articles
+2026-03-26 14:15:27,594 - INFO - Fetched BBC World: 8 articles
+2026-03-26 14:15:27,647 - INFO - Fetched CNN World: 8 articles
+2026-03-26 14:15:27,776 - INFO - Fetched Guardian World: 8 articles
+2026-03-26 14:15:27,802 - INFO - Fetched Al Jazeera: 8 articles
+2026-03-26 14:15:27,821 - INFO - Fetched ABC News: 8 articles
+2026-03-26 14:15:27,983 - INFO - Fetched CBS News: 0 articles
+2026-03-26 14:15:28,025 - INFO - Fetched France24: 8 articles
+2026-03-26 14:15:28,090 - INFO - Fetched Euronews: 8 articles
+2026-03-26 14:15:28,146 - INFO - Fetched Reuters World: 0 articles
+2026-03-26 14:15:28,181 - INFO - Fetched BBC Business: 8 articles
+2026-03-26 14:15:28,256 - INFO - Fetched DW World: 8 articles
+2026-03-26 14:15:28,287 - INFO - Fetched Sky News: 0 articles
+2026-03-26 14:15:28,370 - INFO - Fetched Reuters Business: 0 articles
+2026-03-26 14:15:28,513 - INFO - Fetched Economist: 0 articles
+2026-03-26 14:15:28,537 - INFO - Fetched Foreign Affairs: 8 articles
+2026-03-26 14:15:28,685 - INFO - Fetched CNBC: 8 articles
+2026-03-26 14:15:28,946 - INFO - Fetched CSIS: 0 articles
+2026-03-26 14:15:28,961 - INFO - Fetched RAND: 0 articles
+2026-03-26 14:15:28,963 - INFO - Fetched Stratfor: 0 articles
+2026-03-26 14:15:29,082 - INFO - Fetched Brookings: 0 articles
+2026-03-26 14:15:29,090 - INFO - Fetched MarketWatch: 8 articles
+2026-03-26 14:15:29,106 - INFO - Fetched Bloomberg: 8 articles
+2026-03-26 14:15:29,114 - INFO - Fetched Financial Times: 8 articles
+2026-03-26 14:15:29,121 - INFO - Fetched Jane's Defence: 0 articles
+2026-03-26 14:15:29,207 - INFO - Fetched NBC News: 0 articles
+2026-03-26 14:15:29,583 - INFO - Fetched Defense News: 0 articles
+2026-03-26 14:15:37,846 - INFO - Fetched Washington Post: 8 articles
+2026-03-26 14:15:43,611 - INFO - Collected 128 unique articles from 30 feeds
+2026-03-26 14:15:43,612 - INFO - <<< Completed: collect_feeds
+2026-03-26 14:15:43,612 - INFO - >>> Running: archive
+2026-03-26 14:15:43,859 - INFO - Archive initialized - 2098 articles already archived
+2026-03-26 14:15:43,864 - INFO - Archived 119 new articles (119 total today)
+2026-03-26 14:15:43,864 - INFO - Archive complete: 119 new articles saved
+2026-03-26 14:15:43,865 - INFO - <<< Completed: archive
+2026-03-26 14:15:43,865 - INFO - >>> Running: article_filter
+2026-03-26 14:15:43,870 - INFO - Article filter: 48 relevant (score >= 4), 80 filtered out
+2026-03-26 14:15:43,871 - INFO - Filtered 128 articles -> 48 relevant
+2026-03-26 14:15:43,871 - INFO - <<< Completed: article_filter
+2026-03-26 14:15:43,871 - INFO - >>> Running: quick_analysis
+2026-03-26 14:15:43,871 - INFO - <<< Completed: quick_analysis
+2026-03-26 14:15:43,871 - INFO - >>> Running: signal_detection
+2026-03-26 14:15:43,882 - INFO - <<< Completed: signal_detection
+2026-03-26 14:15:43,883 - INFO - >>> Running: context_retrieval
+2026-03-26 14:15:43,899 - INFO - Knowledge base initialized at C:\Users\Aldin\Desktop\Projects\GeoIntelOpenCode\data\knowledge.db
+2026-03-26 14:15:43,902 - INFO - World Model initialized at C:\Users\Aldin\Desktop\Projects\GeoIntelOpenCode\data\world_state.db
+2026-03-26 14:15:43,903 - INFO - Context retrieved for: 0 countries, 0 issues
+2026-03-26 14:15:43,903 - INFO - <<< Completed: context_retrieval
+2026-03-26 14:15:43,903 - INFO - >>> Running: embed_events
+2026-03-26 14:15:44,023 - INFO - Knowledge (events): stored 0, skipped 3
+2026-03-26 14:15:44,023 - INFO - Knowledge: embedded 0 events
+2026-03-26 14:15:44,023 - INFO - <<< Completed: embed_events
+2026-03-26 14:15:44,023 - INFO - >>> Running: memory_graph
+2026-03-26 14:15:44,034 - INFO - <<< Completed: memory_graph
+2026-03-26 14:15:44,036 - INFO - >>> Running: intelligence_synthesis
+2026-03-26 14:15:44,036 - INFO - <<< Completed: intelligence_synthesis
+2026-03-26 14:15:44,036 - INFO - >>> Running: kosovo_impact
+2026-03-26 14:15:44,036 - INFO - No Kosovo-relevant events found
+2026-03-26 14:15:44,036 - INFO - <<< Completed: kosovo_impact
+2026-03-26 14:15:44,036 - INFO - >>> Running: generate_brief
+2026-03-26 14:15:44,734 - INFO - Telegram service enabled
+2026-03-26 14:15:45,622 - INFO - Message sent successfully (1 chunks)
+2026-03-26 14:15:45,624 - INFO - Brief sent to Telegram
+2026-03-26 14:15:45,624 - INFO - <<< Completed: generate_brief
+2026-03-26 14:15:45,624 - INFO - ==================================================
+2026-03-26 14:15:45,624 - INFO - Pipeline Complete
+2026-03-26 14:15:45,625 - INFO - Final status: briefed
+2026-03-26 14:15:45,625 - INFO - Efficiency: 11 run, 0 skipped, 18.5s
+2026-03-26 14:15:45,625 - INFO - ==================================================

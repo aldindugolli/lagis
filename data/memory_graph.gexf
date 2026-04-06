@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://gexf.net/1.3" version="1.3">
+  <graph mode="static" defaultedgetype="undirected">
+    <attributes class="node">
+      <attribute id="0" title="type" type="string"/>
+      <attribute id="1" title="risk_score" type="float"/>
+    </attributes>
+    <attributes class="edge">
+      <attribute id="0" title="type" type="string"/>
+      <attribute id="1" title="weight" type="float"/>
+    </attributes>
+    <nodes>
+      <node id="Iran" label="Iran">
+        <attvalue for="0" value="country"/>
+        <attvalue for="1" value="7"/>
+      </node>
+      <node id="Israel" label="Israel">
+        <attvalue for="0" value="country"/>
+        <attvalue for="1" value="6"/>
+      </node>
+      <node id="United States" label="United States">
+        <attvalue for="0" value="country"/>
+        <attvalue for="1" value="5"/>
+      </node>
+      <node id="Russia" label="Russia">
+        <attvalue for="0" value="country"/>
+        <attvalue for="1" value="6"/>
+      </node>
+      <node id="China" label="China">
+        <attvalue for="0" value="country"/>
+        <attvalue for="1" value="5"/>
+      </node>
+      <node id="Ukraine" label="Ukraine">
+        <attvalue for="0" value="country"/>
+        <attvalue for="1" value="8"/>
+      </node>
+      <node id="Hezbollah" label="Hezbollah">
+        <attvalue for="0" value="organization"/>
+        <attvalue for="1" value="7"/>
+      </node>
+      <node id="Hamas" label="Hamas">
+        <attvalue for="0" value="organization"/>
+        <attvalue for="1" value="7"/>
+      </node>
+      <node id="NATO" label="NATO">
+        <attvalue for="0" value="organization"/>
+        <attvalue for="1" value="5"/>
+      </node>
+      <node id="EU" label="EU">
+        <attvalue for="0" value="organization"/>
+        <attvalue for="1" value="4"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Iran" target="Hezbollah">
+        <attvalue for="0" value="supports"/>
+        <attvalue for="1" value="0.99"/>
+      </edge>
+      <edge id="1" source="Iran" target="Hamas">
+        <attvalue for="0" value="supports"/>
+        <attvalue for="1" value="0.79"/>
+      </edge>
+      <edge id="2" source="Israel" target="Iran">
+        <attvalue for="0" value="conflict"/>
+        <attvalue for="1" value="0.99"/>
+      </edge>
+      <edge id="3" source="United States" target="Israel">
+        <attvalue for="0" value="allied_with"/>
+        <attvalue for="1" value="0.94"/>
+      </edge>
+      <edge id="4" source="United States" target="NATO">
+        <attvalue for="0" value="allied_with"/>
+        <attvalue for="1" value="0.89"/>
+      </edge>
+      <edge id="5" source="Russia" target="Iran">
+        <attvalue for="0" value="allied_with"/>
+        <attvalue for="1" value="0.69"/>
+      </edge>
+      <edge id="6" source="Russia" target="Ukraine">
+        <attvalue for="0" value="conflict"/>
+        <attvalue for="1" value="0.99"/>
+      </edge>
+      <edge id="7" source="United States" target="Ukraine">
+        <attvalue for="0" value="allied_with"/>
+        <attvalue for="1" value="0.79"/>
+      </edge>
+      <edge id="8" source="China" target="Russia">
+        <attvalue for="0" value="allied_with"/>
+        <attvalue for="1" value="0.59"/>
+      </edge>
+      <edge id="9" source="Iran" target="United States">
+        <attvalue for="0" value="conflict"/>
+        <attvalue for="1" value="0.94"/>
+      </edge>
+      <edge id="10" source="Israel" target="United States">
+        <attvalue for="0" value="conflict"/>
+        <attvalue for="1" value="0.5"/>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,155 @@
+{
+  "nodes": {
+    "Iran": {
+      "type": "country",
+      "risk_score": 7,
+      "last_updated": "2026-04-06"
+    },
+    "Israel": {
+      "type": "country",
+      "risk_score": 6,
+      "last_updated": "2026-04-06"
+    },
+    "United States": {
+      "type": "country",
+      "risk_score": 5,
+      "last_updated": "2026-04-06"
+    },
+    "Russia": {
+      "type": "country",
+      "risk_score": 6,
+      "last_updated": "2026-04-05"
+    },
+    "China": {
+      "type": "country",
+      "risk_score": 5,
+      "last_updated": "2026-04-05"
+    },
+    "Ukraine": {
+      "type": "country",
+      "risk_score": 8,
+      "last_updated": "2026-04-05"
+    },
+    "Hezbollah": {
+      "type": "organization",
+      "risk_score": 7,
+      "last_updated": "2026-04-05"
+    },
+    "Hamas": {
+      "type": "organization",
+      "risk_score": 7,
+      "last_updated": "2026-04-05"
+    },
+    "NATO": {
+      "type": "organization",
+      "risk_score": 5,
+      "last_updated": "2026-04-05"
+    },
+    "EU": {
+      "type": "organization",
+      "risk_score": 4,
+      "last_updated": "2026-04-05"
+    }
+  },
+  "edges": [
+    {
+      "from": "Iran",
+      "to": "Hezbollah",
+      "type": "supports",
+      "weight": 1.0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-06",
+      "frequency": 1
+    },
+    {
+      "from": "Iran",
+      "to": "Hamas",
+      "type": "supports",
+      "weight": 0.79,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "frequency": 1
+    },
+    {
+      "from": "Israel",
+      "to": "Iran",
+      "type": "conflict",
+      "weight": 1.0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-06",
+      "frequency": 1
+    },
+    {
+      "from": "United States",
+      "to": "Israel",
+      "type": "allied_with",
+      "weight": 0.94,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "frequency": 1
+    },
+    {
+      "from": "United States",
+      "to": "NATO",
+      "type": "allied_with",
+      "weight": 0.89,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "frequency": 1
+    },
+    {
+      "from": "Russia",
+      "to": "Iran",
+      "type": "allied_with",
+      "weight": 0.69,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "frequency": 1
+    },
+    {
+      "from": "Russia",
+      "to": "Ukraine",
+      "type": "conflict",
+      "weight": 0.99,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "frequency": 1
+    },
+    {
+      "from": "United States",
+      "to": "Ukraine",
+      "type": "allied_with",
+      "weight": 0.79,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "frequency": 1
+    },
+    {
+      "from": "China",
+      "to": "Russia",
+      "type": "allied_with",
+      "weight": 0.59,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "frequency": 1
+    },
+    {
+      "from": "Iran",
+      "to": "United States",
+      "type": "conflict",
+      "weight": 0.94,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-06",
+      "frequency": 2
+    },
+    {
+      "from": "Israel",
+      "to": "United States",
+      "type": "conflict",
+      "weight": 0.5,
+      "first_seen": "2026-04-06",
+      "last_seen": "2026-04-06",
+      "frequency": 1
+    }
+  ]
+}
